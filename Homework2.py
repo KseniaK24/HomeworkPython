@@ -13,24 +13,24 @@
 #  набор произведений чисел от 1 до N.
 
 # number = int(input('Введите число: '))
-# set = list()
+# list = list()
 # k=1
 # for i in range(1,number+1):
 #     k*=i
-#     set.append(k)
-# print(set)
+#     list.append(k)
+# print(list)
 
 # Задача 3.  Задайте список из n чисел последовательности (1 + 1/n)^n и 
 # выведите на экран их сумму.
 
 # number = int(input('Введите число n: '))
-# set = list()
+# list = list()
 # sum=0
 # for i in range(1,number+1):
 #     k= (1+1/i)**i
 #     sum+=k
-#     set.append(round(k,2))
-# print(set)
+#     list.append(round(k,2))
+# print(list)
 # print('sum =',round(sum,2))
 
 # Задача 4.  Задайте список из N элементов, заполненных числами из 
@@ -40,17 +40,17 @@
 # import random
 
 # number = int(input('Введите число N: '))
-# set = list()
+# list = list()
 # for i in range(number):
 #     k = random.randint(-number,number)
-#     set.append(k)
-# print(set)
+#     list.append(k)
+# print(list)
 
 # count = int(input('Введите колличество элементов для подсчета произведения: '))
 # result = 1
 # for j in range(count):
 #     n =int(input('Введите позицию элемента: '))
-#     result*= set[n]
+#     result*= list[n]
 # print('Произведение элементов на указанных позициях', result)
 
 # Задача 5. Реализуйте алгоритм перемешивания списка.
@@ -58,14 +58,14 @@
 # import random
 
 # number = int(input('Введите количесто элементов списка: '))
-# set = list()
+# list = list()
 # for i in range(number):
-#     set.append(i)
-# print(set)
+#     list.append(i)
+# print(list)
 
 # for j in range(number):
 #     k = random.randint(0,number-1)
-#     temp = set[j]
-#     set[j]=set[k]
-#     set[k]=temp
-# print(set)
+#     temp = list[j]
+#     list[j]=list[k]
+#     list[k]=temp
+# print(list)
