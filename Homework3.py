@@ -113,10 +113,10 @@
 # Задача 5. Задайте число. Составьте список чисел Фибоначи, в том числе для 
 # отрицательных индексов
 
-number = int(input('Введите число: '))
-listFibonacci = [0,1]
-for i in range(number):
-    listFibonacci.append(listFibonacci[i] + listFibonacci[i+1])
-for i in range(number):
-    listFibonacci.insert(0,listFibonacci[1]-listFibonacci[0])
-print(listFibonacci)
+# number = int(input('Введите число: '))
+# listFibonacci = [0,1]
+# for i in range(number):
+#     listFibonacci.append(listFibonacci[i] + listFibonacci[i+1])
+# for i in range(number):
+#     listFibonacci.insert(0,listFibonacci[1]-listFibonacci[0])
+# print(listFibonacci)
