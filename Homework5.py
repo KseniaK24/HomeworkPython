@@ -187,254 +187,254 @@
 
 # b) Игра с ботом
 
-# dict_field = {
-# 'a1': ' ', 'a2': ' ', 'a3': ' ',
-# 'b1': ' ', 'b2': ' ', 'b3': ' ',
-# 'c1': ' ', 'c2': ' ', 'c3': ' ',
-# }
+dict_field = {
+'a1': ' ', 'a2': ' ', 'a3': ' ',
+'b1': ' ', 'b2': ' ', 'b3': ' ',
+'c1': ' ', 'c2': ' ', 'c3': ' ',
+}
 
-# def Print_field(dict):
-#     print('   1     2     3  ','\n',
-#     '     |     |     ','\n'
-#     'a ',dict['a1'],' | ',dict['a2'],' | ',dict['a3'],'\n'
-#     '______|_____|_____','\n'
-#     '      |     |     ','\n'
-#     'b ',dict['b1'],' | ',dict['b2'],' | ',dict['b3'],'\n'
-#     '______|_____|_____','\n'
-#     '      |     |     ','\n'
-#     'c ',dict['c1'],' | ',dict['c2'],' | ',dict['c3'],'\n'
-#     '      |     |     ','\n')
+def Print_field(dict):
+    print('   1     2     3  ','\n',
+    '     |     |     ','\n'
+    'a ',dict['a1'],' | ',dict['a2'],' | ',dict['a3'],'\n'
+    '______|_____|_____','\n'
+    '      |     |     ','\n'
+    'b ',dict['b1'],' | ',dict['b2'],' | ',dict['b3'],'\n'
+    '______|_____|_____','\n'
+    '      |     |     ','\n'
+    'c ',dict['c1'],' | ',dict['c2'],' | ',dict['c3'],'\n'
+    '      |     |     ','\n')
 
-# def Move_bot(dict, k, l):
-#     if dict['b2'] == ' ':
-#         move = 'b2'
-#     elif dict['a1'] == k and dict['a2'] == k and dict['a3'] == ' ':
-#         move = 'a3'
-#     elif dict['b1'] == k and dict['b2'] == k and dict['b3'] == ' ':
-#         move = 'b3'
-#     elif dict['c1'] == k and dict['c2'] == k and dict['c3'] == ' ':
-#         move = 'c3'
-#     elif dict['a2'] == k and dict['a3'] == k and dict['a1'] == ' ':
-#         move = 'a1'
-#     elif dict['b2'] == k and dict['b3'] == k and dict['b1'] == ' ':
-#         move = 'b1'
-#     elif dict['c2'] == k and dict['c3'] == k and dict['c1'] == ' ':
-#         move = 'c1'
-#     elif dict['a1'] == k and dict['b1'] == k and dict['c1'] == ' ':
-#         move = 'c1'
-#     elif dict['a2'] == k and dict['b2'] == k and dict['c2'] == ' ':
-#         move = 'c2'
-#     elif dict['a3'] == k and dict['b3'] == k and dict['c3'] == ' ':
-#         move = 'c3'
-#     elif dict['b1'] == k and dict['c1'] == k and dict['a1'] == ' ':
-#         move = 'a1'
-#     elif dict['b2'] == k and dict['c2'] == k and dict['a2'] == ' ':
-#         move = 'a2'
-#     elif dict['b3'] == k and dict['c3'] == k and dict['a3'] == ' ':
-#         move = 'a3'
-#     elif dict['a1'] == k and dict['b2'] == k and dict['c3'] == ' ':
-#         move = 'c3'
-#     elif dict['b2'] == k and dict['c3'] == k and dict['a1'] == ' ':
-#         move = 'a1'
-#     elif dict['b2'] == k and dict['a3'] == k and dict['c1'] == ' ':
-#         move = 'c1'
-#     elif dict['b2'] == k and dict['c1'] == k and dict['a3'] == ' ':
-#         move = 'a3'
-#     elif dict['a1'] == k and dict['a3'] == k and dict['a2'] == ' ':
-#         move = 'a2'
-#     elif dict['b1'] == k and dict['b3'] == k and dict['b2'] == ' ':
-#         move = 'b2'
-#     elif dict['c1'] == k and dict['c3'] == k and dict['c2'] == ' ':
-#         move = 'c2'
-#     elif dict['a1'] == k and dict['c1'] == k and dict['b1'] == ' ':
-#         move = 'b1'
-#     elif dict['a2'] == k and dict['c2'] == k and dict['b2'] == ' ':
-#         move = 'b2'
-#     elif dict['a3'] == k and dict['c3'] == k and dict['b3'] == ' ':
-#         move = 'b3'
-#     elif dict['a1'] == k and dict['c3'] == k and dict['b2'] == ' ':
-#         move = 'b2'
-#     elif dict['a3'] == k and dict['c1'] == k and dict['b2'] == ' ':
-#         move = 'b2'
-#     elif dict['a1'] == l and dict['a2'] == l and dict['a3'] == ' ':
-#         move = 'a3'
-#     elif dict['b1'] == l and dict['b2'] == l and dict['b3'] == ' ':
-#         move = 'b3'
-#     elif dict['c1'] == l and dict['c2'] == l and dict['c3'] == ' ':
-#         move = 'c3'
-#     elif dict['a2'] == l and dict['a3'] == l and dict['a1'] == ' ':
-#         move = 'a1'
-#     elif dict['b2'] == l and dict['b3'] == l and dict['b1'] == ' ':
-#         move = 'b1'
-#     elif dict['c2'] == l and dict['c3'] == l and dict['c1'] == ' ':
-#         move = 'c1'
-#     elif dict['a1'] == l and dict['b1'] == l and dict['c1'] == ' ':
-#         move = 'c1'
-#     elif dict['a2'] == l and dict['b2'] == l and dict['c2'] == ' ':
-#         move = 'c2'
-#     elif dict['a3'] == l and dict['b3'] == l and dict['c3'] == ' ':
-#         move = 'c3'
-#     elif dict['b1'] == l and dict['c1'] == l and dict['a1'] == ' ':
-#         move = 'a1'
-#     elif dict['b2'] == l and dict['c2'] == l and dict['a2'] == ' ':
-#         move = 'a2'
-#     elif dict['b3'] == l and dict['c3'] == l and dict['a3'] == ' ':
-#         move = 'a3'
-#     elif dict['a1'] == l and dict['b2'] == l and dict['c3'] == ' ':
-#         move = 'c3'
-#     elif dict['b2'] == l and dict['c3'] == l and dict['a1'] == ' ':
-#         move = 'a1'
-#     elif dict['b2'] == l and dict['a3'] == l and dict['c3'] == ' ':
-#         move = 'c3'
-#     elif dict['b2'] == l and dict['c1'] == l and dict['a3'] == ' ':
-#         move = 'a3'
-#     elif dict['a1'] == l and dict['a3'] == l and dict['a2'] == ' ':
-#         move = 'a2'
-#     elif dict['b1'] == l and dict['b3'] == l and dict['b2'] == ' ':
-#         move = 'b2'
-#     elif dict['c1'] == l and dict['c3'] == l and dict['c2'] == ' ':
-#         move = 'c2'
-#     elif dict['a1'] == l and dict['c1'] == l and dict['b1'] == ' ':
-#         move = 'b1'
-#     elif dict['a2'] == l and dict['c2'] == l and dict['b2'] == ' ':
-#         move = 'b2'
-#     elif dict['a3'] == l and dict['c3'] == l and dict['b3'] == ' ':
-#         move = 'b3'
-#     elif dict['a1'] == l and dict['c3'] == l and dict['b2'] == ' ':
-#         move = 'b2'
-#     elif dict['a3'] == l and dict['c1'] == l and dict['b2'] == ' ':
-#         move = 'b2'
-#     elif dict['a1'] == ' ' and dict['a2'] == ' ' and dict['a3'] == k:
-#         move = 'a1'
-#     elif dict['b1'] == ' ' and dict['b2'] == ' ' and dict['b3'] == k:
-#         move = 'b1'
-#     elif dict['c1'] == ' ' and dict['c2'] == ' ' and dict['c3'] == k:
-#         move = 'c1'
-#     elif dict['a2'] == ' ' and dict['a3'] == ' ' and dict['a1'] == k:
-#         move = 'a3'
-#     elif dict['b2'] == ' ' and dict['b3'] == ' ' and dict['b1'] == k:
-#         move = 'b3'
-#     elif dict['c2'] == ' ' and dict['c3'] == ' ' and dict['c1'] == k:
-#         move = 'c3'
-#     elif dict['a1'] == ' ' and dict['b1'] == ' ' and dict['c1'] == k:
-#         move = 'a1'
-#     elif dict['a2'] == ' ' and dict['b2'] == ' ' and dict['c2'] == k:
-#         move = 'a2'
-#     elif dict['a3'] == ' ' and dict['b3'] == ' ' and dict['c3'] == k:
-#         move = 'a3'
-#     elif dict['b1'] == ' ' and dict['c1'] == ' ' and dict['a1'] == k:
-#         move = 'c1'
-#     elif dict['b2'] == ' ' and dict['c2'] == ' ' and dict['a2'] == k:
-#         move = 'c2'
-#     elif dict['b3'] == ' ' and dict['c3'] == ' ' and dict['a3'] == k:
-#         move = 'c3'
-#     elif dict['a1'] == ' ' and dict['b2'] == ' ' and dict['c3'] == k:
-#         move = 'c1'
-#     elif dict['b2'] == ' ' and dict['c3'] == ' ' and dict['a1'] == k:
-#         move = 'c3'
-#     elif dict['b2'] == ' ' and dict['a3'] == ' ' and dict['c3'] == k:
-#         move = 'a3'
-#     elif dict['b2'] == ' ' and dict['c1'] == ' ' and dict['a3'] == k:
-#         move = 'c1'
-#     elif dict['a1'] == ' ' and dict['a3'] == ' ' and dict['a2'] == k:
-#         move = 'a1'
-#     elif dict['b1'] == ' ' and dict['b3'] == ' ' and dict['b2'] == k:
-#         move = 'b1'
-#     elif dict['c1'] == ' ' and dict['c3'] == ' ' and dict['c2'] == k:
-#         move = 'c1'
-#     elif dict['a1'] == ' ' and dict['c1'] == ' ' and dict['b1'] == k:
-#         move = 'a1'
-#     elif dict['a2'] == ' ' and dict['c2'] == ' ' and dict['b2'] == k:
-#         move = 'a2'
-#     elif dict['a3'] == ' ' and dict['c3'] == ' ' and dict['b3'] == k:
-#         move = 'c3'
-#     elif dict['a1'] == ' ' and dict['c3'] == ' ' and dict['b2'] == k:
-#         move = 'a1'
-#     elif dict['a3'] == ' ' and dict['c1'] == ' ' and dict['b2'] == k:
-#         move = 'a3'
-#     elif dict['b2'] != ' ' and dict['a3'] == ' ':
-#         move = 'a3'
-#     elif dict['a1'] == ' ': move  = 'a1'
-#     elif dict['a2'] == ' ': move  = 'a2'
-#     elif dict['a3'] == ' ': move  = 'a3'
-#     elif dict['b1'] == ' ': move  = 'b1'
-#     elif dict['b3'] == ' ': move  = 'b3'
-#     elif dict['c1'] == ' ': move  = 'c1'
-#     elif dict['c2'] == ' ': move  = 'c2'
-#     elif dict['c3'] == ' ': move  = 'c3'
-#     return move
+def Move_bot(dict, k, l):
+    if dict['b2'] == ' ':
+        move = 'b2'
+    elif dict['a1'] == k and dict['a2'] == k and dict['a3'] == ' ':
+        move = 'a3'
+    elif dict['b1'] == k and dict['b2'] == k and dict['b3'] == ' ':
+        move = 'b3'
+    elif dict['c1'] == k and dict['c2'] == k and dict['c3'] == ' ':
+        move = 'c3'
+    elif dict['a2'] == k and dict['a3'] == k and dict['a1'] == ' ':
+        move = 'a1'
+    elif dict['b2'] == k and dict['b3'] == k and dict['b1'] == ' ':
+        move = 'b1'
+    elif dict['c2'] == k and dict['c3'] == k and dict['c1'] == ' ':
+        move = 'c1'
+    elif dict['a1'] == k and dict['b1'] == k and dict['c1'] == ' ':
+        move = 'c1'
+    elif dict['a2'] == k and dict['b2'] == k and dict['c2'] == ' ':
+        move = 'c2'
+    elif dict['a3'] == k and dict['b3'] == k and dict['c3'] == ' ':
+        move = 'c3'
+    elif dict['b1'] == k and dict['c1'] == k and dict['a1'] == ' ':
+        move = 'a1'
+    elif dict['b2'] == k and dict['c2'] == k and dict['a2'] == ' ':
+        move = 'a2'
+    elif dict['b3'] == k and dict['c3'] == k and dict['a3'] == ' ':
+        move = 'a3'
+    elif dict['a1'] == k and dict['b2'] == k and dict['c3'] == ' ':
+        move = 'c3'
+    elif dict['b2'] == k and dict['c3'] == k and dict['a1'] == ' ':
+        move = 'a1'
+    elif dict['b2'] == k and dict['a3'] == k and dict['c1'] == ' ':
+        move = 'c1'
+    elif dict['b2'] == k and dict['c1'] == k and dict['a3'] == ' ':
+        move = 'a3'
+    elif dict['a1'] == k and dict['a3'] == k and dict['a2'] == ' ':
+        move = 'a2'
+    elif dict['b1'] == k and dict['b3'] == k and dict['b2'] == ' ':
+        move = 'b2'
+    elif dict['c1'] == k and dict['c3'] == k and dict['c2'] == ' ':
+        move = 'c2'
+    elif dict['a1'] == k and dict['c1'] == k and dict['b1'] == ' ':
+        move = 'b1'
+    elif dict['a2'] == k and dict['c2'] == k and dict['b2'] == ' ':
+        move = 'b2'
+    elif dict['a3'] == k and dict['c3'] == k and dict['b3'] == ' ':
+        move = 'b3'
+    elif dict['a1'] == k and dict['c3'] == k and dict['b2'] == ' ':
+        move = 'b2'
+    elif dict['a3'] == k and dict['c1'] == k and dict['b2'] == ' ':
+        move = 'b2'
+    elif dict['a1'] == l and dict['a2'] == l and dict['a3'] == ' ':
+        move = 'a3'
+    elif dict['b1'] == l and dict['b2'] == l and dict['b3'] == ' ':
+        move = 'b3'
+    elif dict['c1'] == l and dict['c2'] == l and dict['c3'] == ' ':
+        move = 'c3'
+    elif dict['a2'] == l and dict['a3'] == l and dict['a1'] == ' ':
+        move = 'a1'
+    elif dict['b2'] == l and dict['b3'] == l and dict['b1'] == ' ':
+        move = 'b1'
+    elif dict['c2'] == l and dict['c3'] == l and dict['c1'] == ' ':
+        move = 'c1'
+    elif dict['a1'] == l and dict['b1'] == l and dict['c1'] == ' ':
+        move = 'c1'
+    elif dict['a2'] == l and dict['b2'] == l and dict['c2'] == ' ':
+        move = 'c2'
+    elif dict['a3'] == l and dict['b3'] == l and dict['c3'] == ' ':
+        move = 'c3'
+    elif dict['b1'] == l and dict['c1'] == l and dict['a1'] == ' ':
+        move = 'a1'
+    elif dict['b2'] == l and dict['c2'] == l and dict['a2'] == ' ':
+        move = 'a2'
+    elif dict['b3'] == l and dict['c3'] == l and dict['a3'] == ' ':
+        move = 'a3'
+    elif dict['a1'] == l and dict['b2'] == l and dict['c3'] == ' ':
+        move = 'c3'
+    elif dict['b2'] == l and dict['c3'] == l and dict['a1'] == ' ':
+        move = 'a1'
+    elif dict['b2'] == l and dict['a3'] == l and dict['c3'] == ' ':
+        move = 'c3'
+    elif dict['b2'] == l and dict['c1'] == l and dict['a3'] == ' ':
+        move = 'a3'
+    elif dict['a1'] == l and dict['a3'] == l and dict['a2'] == ' ':
+        move = 'a2'
+    elif dict['b1'] == l and dict['b3'] == l and dict['b2'] == ' ':
+        move = 'b2'
+    elif dict['c1'] == l and dict['c3'] == l and dict['c2'] == ' ':
+        move = 'c2'
+    elif dict['a1'] == l and dict['c1'] == l and dict['b1'] == ' ':
+        move = 'b1'
+    elif dict['a2'] == l and dict['c2'] == l and dict['b2'] == ' ':
+        move = 'b2'
+    elif dict['a3'] == l and dict['c3'] == l and dict['b3'] == ' ':
+        move = 'b3'
+    elif dict['a1'] == l and dict['c3'] == l and dict['b2'] == ' ':
+        move = 'b2'
+    elif dict['a3'] == l and dict['c1'] == l and dict['b2'] == ' ':
+        move = 'b2'
+    elif dict['a1'] == ' ' and dict['a2'] == ' ' and dict['a3'] == k:
+        move = 'a1'
+    elif dict['b1'] == ' ' and dict['b2'] == ' ' and dict['b3'] == k:
+        move = 'b1'
+    elif dict['c1'] == ' ' and dict['c2'] == ' ' and dict['c3'] == k:
+        move = 'c1'
+    elif dict['a2'] == ' ' and dict['a3'] == ' ' and dict['a1'] == k:
+        move = 'a3'
+    elif dict['b2'] == ' ' and dict['b3'] == ' ' and dict['b1'] == k:
+        move = 'b3'
+    elif dict['c2'] == ' ' and dict['c3'] == ' ' and dict['c1'] == k:
+        move = 'c3'
+    elif dict['a1'] == ' ' and dict['b1'] == ' ' and dict['c1'] == k:
+        move = 'a1'
+    elif dict['a2'] == ' ' and dict['b2'] == ' ' and dict['c2'] == k:
+        move = 'a2'
+    elif dict['a3'] == ' ' and dict['b3'] == ' ' and dict['c3'] == k:
+        move = 'a3'
+    elif dict['b1'] == ' ' and dict['c1'] == ' ' and dict['a1'] == k:
+        move = 'c1'
+    elif dict['b2'] == ' ' and dict['c2'] == ' ' and dict['a2'] == k:
+        move = 'c2'
+    elif dict['b3'] == ' ' and dict['c3'] == ' ' and dict['a3'] == k:
+        move = 'c3'
+    elif dict['a1'] == ' ' and dict['b2'] == ' ' and dict['c3'] == k:
+        move = 'c1'
+    elif dict['b2'] == ' ' and dict['c3'] == ' ' and dict['a1'] == k:
+        move = 'c3'
+    elif dict['b2'] == ' ' and dict['a3'] == ' ' and dict['c3'] == k:
+        move = 'a3'
+    elif dict['b2'] == ' ' and dict['c1'] == ' ' and dict['a3'] == k:
+        move = 'c1'
+    elif dict['a1'] == ' ' and dict['a3'] == ' ' and dict['a2'] == k:
+        move = 'a1'
+    elif dict['b1'] == ' ' and dict['b3'] == ' ' and dict['b2'] == k:
+        move = 'b1'
+    elif dict['c1'] == ' ' and dict['c3'] == ' ' and dict['c2'] == k:
+        move = 'c1'
+    elif dict['a1'] == ' ' and dict['c1'] == ' ' and dict['b1'] == k:
+        move = 'a1'
+    elif dict['a2'] == ' ' and dict['c2'] == ' ' and dict['b2'] == k:
+        move = 'a2'
+    elif dict['a3'] == ' ' and dict['c3'] == ' ' and dict['b3'] == k:
+        move = 'c3'
+    elif dict['a1'] == ' ' and dict['c3'] == ' ' and dict['b2'] == k:
+        move = 'a1'
+    elif dict['a3'] == ' ' and dict['c1'] == ' ' and dict['b2'] == k:
+        move = 'a3'
+    elif dict['b2'] != ' ' and dict['a3'] == ' ':
+        move = 'a3'
+    elif dict['a1'] == ' ': move  = 'a1'
+    elif dict['a2'] == ' ': move  = 'a2'
+    elif dict['a3'] == ' ': move  = 'a3'
+    elif dict['b1'] == ' ': move  = 'b1'
+    elif dict['b3'] == ' ': move  = 'b3'
+    elif dict['c1'] == ' ': move  = 'c1'
+    elif dict['c2'] == ' ': move  = 'c2'
+    elif dict['c3'] == ' ': move  = 'c3'
+    return move
 
-# k = 'X'
-# l = 'O'
-# import random
-# num1 = random.randint(1,10)
-# num2 = random.randint(1,10)
+k = 'X'
+l = 'O'
+import random
+num1 = random.randint(1,10)
+num2 = random.randint(1,10)
 
-# if num1 > num2:
-#     move = Move_bot(dict_field, k, l)
-#     dict_field[move] = k
-#     temp = k
-#     k=l
-#     l=temp
+if num1 > num2:
+    move = Move_bot(dict_field, k, l)
+    dict_field[move] = k
+    temp = k
+    k=l
+    l=temp
 
-# Print_field(dict_field)
-# while True:
-#     while True:
-#         print('Ход игрока, введите букву и цифру поля: ')
-#         move = input()
-#         move = move.replace(' ', '')
-#         if dict_field.get(move, -1) == ' ':
-#             break
-#         print('Поле занято или не существует, введите еще')
-#     dict_field[move] = k
-#     if (dict_field['a1'] == dict_field['a2'] == dict_field['a3'] == k or
-#     dict_field['b1'] == dict_field['b2'] == dict_field['b3'] == k or
-#     dict_field['c1'] == dict_field['c2'] == dict_field['c3'] == k or
-#     dict_field['a1'] == dict_field['b1'] == dict_field['c1'] == k or
-#     dict_field['a2'] == dict_field['b2'] == dict_field['c2'] == k or
-#     dict_field['a3'] == dict_field['b3'] == dict_field['c3'] == k or
-#     dict_field['a1'] == dict_field['b2'] == dict_field['c3'] == k or
-#     dict_field['a3'] == dict_field['b2'] == dict_field['c1'] == k):
-#         Print_field(dict_field)
-#         print('Игра окончена. Игрок выйграл!')
-#         break
-#     count = 0
-#     for i in dict_field.keys():
-#         if dict_field[i] != ' ':
-#             count+=1
-#     if count == 9:
-#         Print_field(dict_field)
-#         print('Игра окончена. Ничья!') 
-#         break
-#     Print_field(dict_field)
-#     temp = k
-#     k=l
-#     l=temp
-#     move = Move_bot(dict_field, k, l)
-#     dict_field[move]= k
-#     if (dict_field['a1'] == dict_field['a2'] == dict_field['a3'] == k or
-#     dict_field['b1'] == dict_field['b2'] == dict_field['b3'] == k or
-#     dict_field['c1'] == dict_field['c2'] == dict_field['c3'] == k or
-#     dict_field['a1'] == dict_field['b1'] == dict_field['c1'] == k or
-#     dict_field['a2'] == dict_field['b2'] == dict_field['c2'] == k or
-#     dict_field['a3'] == dict_field['b3'] == dict_field['c3'] == k or
-#     dict_field['a1'] == dict_field['b2'] == dict_field['c3'] == k or
-#     dict_field['a3'] == dict_field['b2'] == dict_field['c1'] == k):
-#         Print_field(dict_field)
-#         print('Игра окончена. Бот выйграл!')
-#         break
-#     count = 0
-#     for i in dict_field.keys():
-#         if dict_field[i] != ' ':
-#             count+=1
-#     if count == 9:
-#         Print_field(dict_field)
-#         print('Игра окончена. Ничья!') 
-#         break
-#     Print_field(dict_field)
-#     temp = k
-#     k=l
-#     l=temp
+Print_field(dict_field)
+while True:
+    while True:
+        print('Ход игрока, введите букву и цифру поля: ')
+        move = input()
+        move = move.replace(' ', '')
+        if dict_field.get(move, -1) == ' ':
+            break
+        print('Поле занято или не существует, введите еще')
+    dict_field[move] = k
+    if (dict_field['a1'] == dict_field['a2'] == dict_field['a3'] == k or
+    dict_field['b1'] == dict_field['b2'] == dict_field['b3'] == k or
+    dict_field['c1'] == dict_field['c2'] == dict_field['c3'] == k or
+    dict_field['a1'] == dict_field['b1'] == dict_field['c1'] == k or
+    dict_field['a2'] == dict_field['b2'] == dict_field['c2'] == k or
+    dict_field['a3'] == dict_field['b3'] == dict_field['c3'] == k or
+    dict_field['a1'] == dict_field['b2'] == dict_field['c3'] == k or
+    dict_field['a3'] == dict_field['b2'] == dict_field['c1'] == k):
+        Print_field(dict_field)
+        print('Игра окончена. Игрок выйграл!')
+        break
+    count = 0
+    for i in dict_field.keys():
+        if dict_field[i] != ' ':
+            count+=1
+    if count == 9:
+        Print_field(dict_field)
+        print('Игра окончена. Ничья!') 
+        break
+    Print_field(dict_field)
+    temp = k
+    k=l
+    l=temp
+    move = Move_bot(dict_field, k, l)
+    dict_field[move]= k
+    if (dict_field['a1'] == dict_field['a2'] == dict_field['a3'] == k or
+    dict_field['b1'] == dict_field['b2'] == dict_field['b3'] == k or
+    dict_field['c1'] == dict_field['c2'] == dict_field['c3'] == k or
+    dict_field['a1'] == dict_field['b1'] == dict_field['c1'] == k or
+    dict_field['a2'] == dict_field['b2'] == dict_field['c2'] == k or
+    dict_field['a3'] == dict_field['b3'] == dict_field['c3'] == k or
+    dict_field['a1'] == dict_field['b2'] == dict_field['c3'] == k or
+    dict_field['a3'] == dict_field['b2'] == dict_field['c1'] == k):
+        Print_field(dict_field)
+        print('Игра окончена. Бот выйграл!')
+        break
+    count = 0
+    for i in dict_field.keys():
+        if dict_field[i] != ' ':
+            count+=1
+    if count == 9:
+        Print_field(dict_field)
+        print('Игра окончена. Ничья!') 
+        break
+    Print_field(dict_field)
+    temp = k
+    k=l
+    l=temp
 
 # Задача 4. Реализуйте RLE алгоритм: реализуйте модуль сжатия и
 # восстановления данных.
