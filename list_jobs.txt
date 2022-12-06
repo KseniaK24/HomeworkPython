@@ -1,0 +1,9 @@
+1  Ivanov   Ivan      Ivanovich     89002001030 Director   
+2  Petrov   Sergey    Sergeevich    89642005555 Manager    
+3  Vasiliev Semyon    Semyonovich   89632587411 Turner     
+4  Smirnov  Pavel     Genadevich    89655692010 Locksmith  
+5  Pavlova  Anna      Vasilievna    89632315580 Accountant 
+6  Rogozin  Anton     Alexandrovich 89662003232 Welder     
+7  Sidorova Ekaterina Vladimirovna  89005002213 Engineer   
+8  Kirilova Natalya   Alexandrovna  89632366553 Engineer   
+

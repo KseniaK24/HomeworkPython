@@ -1,11 +1,12 @@
-89002001030 Ivanov Ivan Ivanovich 
-89642005555 Petrov Sergey Sergeevich 
-89632587411 Vasiliev Semyon Semyonovich 
-89655692010 Smirnov Pavel Genadevich 
-89632315580 Pavlova Anna Vasilievna 
-89662003232 Ivanova Maria Alexandrovna 
-89005002213 Sidorova Ekaterina Vladimirovna 
-89632366553 Kirilova Natalya Alexandrovna 
-89002001030 Ivanov Ivan Ivanovich 
-89642005555 Petrov Sergey Sergeevich 
+Ivanov Ivan Ivanovich 89002001030 
+Petrov Sergey Sergeevich 89642005555 
+Vasiliev Semyon Semyonovich 89632587411 
+Smirnov Pavel Genadevich 89655692010 
+Pavlova Anna Vasilievna 89632315580 
+Ivanova Maria Alexandrovna 89662003232 
+Sidorova Ekaterina Vladimirovna 89005002213 
+Kirilova Natalya Alexandrovna 89632366553 
+Ivanov Ivan Ivanovich 89002001030 
+Petrov Sergey Sergeevich 89642005555 
+
 
