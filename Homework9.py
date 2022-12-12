@@ -6,6 +6,6 @@
 #     bar.next()
 # bar.finish()
 
-# from isOdd import isOdd
+from isOdd import isOdd
 
-# print(isOdd(4)) 
+print(isOdd(9)) 
