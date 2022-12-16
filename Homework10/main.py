@@ -2,7 +2,7 @@
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters
 import bot_commands
 
-app = ApplicationBuilder().token("5905338890:AAFrdtSARrHqmvYmj2b-P1uHdq9ArT83gmA").build()
+app = ApplicationBuilder().token("TOKEN").build()
 
 app.add_handler(CommandHandler("start", bot_commands.start))
 app.add_handler(CommandHandler("1", bot_commands.command_1))
